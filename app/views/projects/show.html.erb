@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @project.location %>
+</p>
+
+<p>
+  <strong>Client name:</strong>
+  <%= @project.client_name %>
+</p>
+
+<p>
+  <strong>Architecture:</strong>
+  <%= @project.architecture %>
+</p>
+
+<p>
+  <strong>Consultant:</strong>
+  <%= @project.consultant %>
+</p>
+
+<p>
+  <strong>Tender:</strong>
+  <%= @project.tender %>
+</p>
+
+<p>
+  <strong>Receipt of tender:</strong>
+  <%= @project.receipt_of_tender %>
+</p>
+
+<p>
+  <strong>Tender sub date:</strong>
+  <%= @project.tender_sub_date %>
+</p>
+
+<p>
+  <strong>Pmc:</strong>
+  <%= @project.pmc %>
+</p>
+
+<p>
+  <strong>Project cost:</strong>
+  <%= @project.project_cost %>
+</p>
+
+<p>
+  <strong>Walltype:</strong>
+  <%= @project.walltype %>
+</p>
+
+<p>
+  <strong>Enquiry date:</strong>
+  <%= @project.enquiry_date %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  location: MyString
+  client_name: MyString
+  architecture: MyString
+  consultant: MyString
+  tender: MyString
+  receipt_of_tender: 2017-04-05
+  tender_sub_date: 2017-04-05
+  pmc: MyString
+  project_cost: 9.99
+  walltype: MyString
+  enquiry_date: 2017-04-05
+
+two:
+  name: MyString
+  location: MyString
+  client_name: MyString
+  architecture: MyString
+  consultant: MyString
+  tender: MyString
+  receipt_of_tender: 2017-04-05
+  tender_sub_date: 2017-04-05
+  pmc: MyString
+  project_cost: 9.99
+  walltype: MyString
+  enquiry_date: 2017-04-05

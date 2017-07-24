@@ -1,0 +1,65 @@
+<%= form_for(@project) do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :client_name %><br>
+    <%= f.text_field :client_name %>
+  </div>
+  <div class="field">
+    <%= f.label :architecture %><br>
+    <%= f.text_field :architecture %>
+  </div>
+  <div class="field">
+    <%= f.label :consultant %><br>
+    <%= f.text_field :consultant %>
+  </div>
+  <div class="field">
+    <%= f.label :tender %><br>
+    <%= f.text_field :tender %>
+  </div>
+  <div class="field">
+    <%= f.label :receipt_of_tender %><br>
+    <%= f.date_select :receipt_of_tender %>
+  </div>
+  <div class="field">
+    <%= f.label :tender_sub_date %><br>
+    <%= f.date_select :tender_sub_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pmc %><br>
+    <%= f.text_field :pmc %>
+  </div>
+  <div class="field">
+    <%= f.label :project_cost %><br>
+    <%= f.text_field :project_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :walltype %><br>
+    <%= f.text_field :walltype %>
+  </div>
+  <div class="field">
+    <%= f.label :enquiry_date %><br>
+    <%= f.date_select :enquiry_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
